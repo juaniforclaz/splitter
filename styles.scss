@@ -92,6 +92,7 @@ body {
     align-items: center;
     justify-content: center;
     font-family: "Roboto Slab", serif;
+
     &:focus {
       background: #59a771;
       border-width: 2px 2px 6px 2px;
@@ -143,4 +144,11 @@ body {
   border-style: solid;
   border-color: #59a771;
   border-radius: 10px;
+}
+
+.resultado-row {
+  display: flex;
+  flex-direction: row;
+  color: #f5f5f5;
+  gap: 5px;
 }

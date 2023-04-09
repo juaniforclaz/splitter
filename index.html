@@ -11,17 +11,17 @@
     <div class="container">
       <label for="total" class="title">Importe total</label>
       <input
-        type="text"
+        type="number"
         name=""
         id="total"
         placeholder="$"
         class="input-form"
       />
       <div class="propina">
-        <button>5%</button>
-        <button>15%</button>
-        <button>25%</button>
-        <button>50%</button>
+        <input type="button" class="valuePropina" value="5" />
+        <input type="button" class="valuePropina" value="10" />
+        <input type="button" class="valuePropina" value="15" />
+        <input type="button" class="valuePropina" value="50" />
         <input
           type="number"
           min="0"
@@ -34,18 +34,24 @@
       <div class="personas">
         <label for="integrantes" class="title">Cantidad de integrantes</label>
         <input
-          type="text"
+          type="number"
           name=""
-          id="integrantes"
+          id="personas"
           class="input-form"
           placeholder="Cantidad"
         />
       </div>
       <div class="resultado">
         <p class="title">Resultado total</p>
-        <h2>$3.680</h2>
+        <div class="resultado-row">
+          <h2>$</h2>
+          <h2 id="newTotal"></h2>
+        </div>
         <p class="title">Resultado por persona</p>
-        <h2>$3.680</h2>
+        <div class="resultado-row">
+          <h2>$</h2>
+          <h2 id="newPersonas"></h2>
+        </div>
       </div>
       <div class="cargar">
         <input type="file" name="" id="" placeholder="Cargar" />
@@ -54,5 +60,6 @@
         <p>Compartir</p>
       </div>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
