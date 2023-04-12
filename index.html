@@ -5,37 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <label for="total" class="title">Importe total</label>
+    <form class="container">
+      <label for="total" class="title">Importe total ($)</label>
       <input
         type="number"
-        name=""
+        name="total"
         id="total"
         placeholder="$"
         class="input-form"
       />
       <div class="propina">
-        <input type="button" class="valuePropina" value="5" />
-        <input type="button" class="valuePropina" value="10" />
-        <input type="button" class="valuePropina" value="15" />
-        <input type="button" class="valuePropina" value="50" />
+        <label for="propina" class="title">Propina deseada (%)</label>
         <input
           type="number"
           min="0"
+          id="propina"
           max="100"
           maxlength="3"
-          value="%"
+          name="porcentajePropina"
           placeholder="%"
+          class="input-form"
         />
       </div>
       <div class="personas">
-        <label for="integrantes" class="title">Cantidad de integrantes</label>
+        <label for="personas" class="title">Cantidad de integrantes</label>
         <input
           type="number"
-          name=""
+          name="personas"
           id="personas"
           class="input-form"
           placeholder="Cantidad"
@@ -53,13 +56,19 @@
           <h2 id="newPersonas"></h2>
         </div>
       </div>
-      <div class="cargar">
-        <input type="file" name="" id="" placeholder="Cargar" />
+      <div>
+        <textarea name="" id="resultadoTexto" cols="30" rows="10"></textarea>
+        <button type="button" id="compartir">Copiar</button>
       </div>
-      <div class="compartir">
-        <p>Compartir</p>
-      </div>
-    </div>
+    </form>
+    <footer>
+      <p>
+        Made by
+        <a href="https://github.com/juaniforclaz" target="_blank">
+          <i class="fab fa-github"></i
+        ></a>
+      </p>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>
